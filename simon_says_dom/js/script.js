@@ -50,7 +50,7 @@ function guessNumbers() {
         console.log("indovina i numeri")
         clearInterval(countdown)
         instructions.textContent = "inserisci i numeri che ricordi"
-        numbersList.classList.remove("d-none")
+        numbersList.remove("d-none")
         answersForm.classList.remove("d-none")
         return
     }
@@ -63,4 +63,14 @@ function guessNumbers() {
         // Rimuovi l'elemento
         paragrafo.remove();
     </script>
-    */ 
+    */
+
+// controlla i numeri inseriti dall'utente
+answersForm.addEventListener("submit", function () {
+
+    const Usernumber = []
+    const input = inputGroup.querySelectorAll("input")
+
+
+
+})
