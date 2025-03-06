@@ -13,6 +13,23 @@ const timerDuration = 30
 // generatore di numeri casuali
 const randomNumbers = []
 for (let i = 0; i < numberCount; i++) {
-    let num = Math.round(Math.random() * 50) + 1
+    let num = Math.round(Math.random() * 50) + 1;
     randomNumbers.push(num)
-} console.log(num)
+    console.log(num)
+}
+
+// mostrare i numeri in pagina
+
+/* come aagiungere un elemento a html da javascript
+    
+        // Creare un nuovo elemento paragrafo
+        var nuovoParagrafo = document.createElement("p");
+        // Aggiungere del testo al paragrafo
+        nuovoParagrafo.textContent = "Questo è un nuovo paragrafo aggiunto con JavaScript.";
+        // Aggiungere il paragrafo al contenitore
+        document.getElementById("contenitore").appendChild(nuovoParagrafo);
+   */
+
+const li = document.createElement("li")
+li.textContent = randomNumbers[i]
+numbersList.appendChild(li)
