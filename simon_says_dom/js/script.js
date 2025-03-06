@@ -29,7 +29,8 @@ for (let i = 0; i < numberCount; i++) {
         // Aggiungere il paragrafo al contenitore
         document.getElementById("contenitore").appendChild(nuovoParagrafo);
    */
-
-const li = document.createElement("li")
-li.textContent = randomNumbers[i]
-numbersList.appendChild(li)
+for (let i = 0; i < randomNumbers.length; i++) {
+    const li = document.createElement("li")
+    li.textContent = randomNumbers[i]
+    numbersList.appendChild(li)
+}
