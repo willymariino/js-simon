@@ -49,7 +49,17 @@ function guessNumbers() {
     if (count === 0) {
         console.log("indovina i numeri")
         clearInterval(countdown)
+        instructions.textContent = "inserisci i numeri che ricordi"
+        answersForm.remove
         return
     }
     return
 }
+/* come rimuovere un elemento con javascript
+    <script>
+        // Seleziona l'elemento da rimuovere
+        var paragrafo = document.getElementById('paragrafo'); questo già fatto all'inizio
+        // Rimuovi l'elemento
+        paragrafo.remove();
+    </script>
+    */ 
