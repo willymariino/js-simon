@@ -9,9 +9,8 @@ const message = document.getElementById("message");
 const numberCount = 5
 const timerDuration = 30
 
-// variabili di gioco
-let = RandomNumbers = []
-let timer = TimerDuration
 
 // generatore di numeri casuali
-for (let i = 0; i < numberCount; i++)
+for (let i = 0; i < numberCount; i++) {
+    let num = Math.round(Math.random() * 50) + 1
+} console.log(num)
