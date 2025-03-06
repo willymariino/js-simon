@@ -20,7 +20,7 @@ for (let i = 0; i < numberCount; i++) {
 
 // mostrare i numeri in pagina
 
-/* come aagiungere un elemento a html da javascript
+/* come agiungere un elemento a html da javascript
     
         // Creare un nuovo elemento paragrafo
         var nuovoParagrafo = document.createElement("p");
@@ -33,4 +33,23 @@ for (let i = 0; i < randomNumbers.length; i++) {
     const li = document.createElement("li")
     li.textContent = randomNumbers[i]
     numbersList.appendChild(li)
+}
+
+// ciclo che conta fino a 0 da 30
+
+let count = 30
+let countdown = setInterval(guessNumbers, 1000)
+
+function guessNumbers() {
+
+    console.log(count)
+
+    count--
+
+    if (count === 0) {
+        console.log("indovina i numeri")
+        clearInterval(countdown)
+        return
+    }
+    return
 }
